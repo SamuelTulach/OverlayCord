@@ -29,11 +29,13 @@ bool ConnectToProcess(ConnectedProcessInfo& processInfo)
 Please note that this straightforward example **uses very basic CPU rendering**, which does not offer optimal performance. In addition, regardless of your intention to use GPU rendering (such as DirectX), **the framebuffer will still be copied by the CPU**.
 
 ## Media
+*Video showing the example*
+
 [![video](https://img.youtube.com/vi/T2uftl9C9p8/0.jpg)](https://www.youtube.com/watch?v=T2uftl9C9p8)
 
-*Video showing the example*
+*Image showing the example*
 
 ![pic1](Assets/0.png)
 
-*Image showing the example*
+
 
