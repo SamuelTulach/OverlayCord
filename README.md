@@ -41,3 +41,7 @@ Please note that this straightforward example **uses very basic CPU rendering**,
 
 ![pic2](Assets/1.png)
 
+*Image showing custom project rendering over anticheat protected game*
+
+![pic3](Assets/2.png)
+
