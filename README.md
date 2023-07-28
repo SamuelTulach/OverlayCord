@@ -2,7 +2,7 @@
 This project is a simple proof of concept that shows you how to hijack Discord's internal game overlay from an external process without modifying any Discord files, loading any Discord modules, or hooking anything.
 
 ## How does it work?
-Discord's whitelisted internal module (DiscordHook64.dll) that is being loaded by games (using SetWindowHookEx) simply copies the framebuffer from a memory mapped file. This code snipped from this repo is pretty much self explanatory:
+Discord's whitelisted internal module (DiscordHook64.dll), which is loaded by games using SetWindowHookEx, simply copies the framebuffer from a memory-mapped file. The code snippet from this repo is pretty much self-explanatory:
 
 ```
 typedef struct _Header
@@ -12,7 +12,7 @@ typedef struct _Header
 	UINT NoClue;
 	UINT Width;
 	UINT Height;
-	BYTE Buffer[1];
+	BYTE Buffer[1]; // B8G8R8A8
 } Header;
 
 bool ConnectToProcess(ConnectedProcessInfo& processInfo)
@@ -26,3 +26,4 @@ bool ConnectToProcess(ConnectedProcessInfo& processInfo)
 	return processInfo.MappedAddress;
 }
 ```
+Please note that this straightforward example **uses very basic CPU rendering**, which does not offer optimal performance. In addition, regardless of your intention to use GPU rendering (such as DirectX), **the framebuffer will still be copied by the CPU**.
