@@ -30,3 +30,8 @@ Please note that this straightforward example **uses very basic CPU rendering**,
 
 ## Media
 [![video](https://img.youtube.com/vi/T2uftl9C9p8/0.jpg)](https://www.youtube.com/watch?v=T2uftl9C9p8)
+*Video showing the example*
+
+![pic1](Assets/0.png)
+**Image showing the example*
+
