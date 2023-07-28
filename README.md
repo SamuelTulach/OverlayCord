@@ -37,5 +37,7 @@ Please note that this straightforward example **uses very basic CPU rendering**,
 
 ![pic1](Assets/0.png)
 
+*Image showing custom project that renders using DX11*
 
+![pic2](Assets/1.png)
 
