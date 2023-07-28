@@ -1,4 +1,4 @@
-# OverlayCord (ʏᴇs I ᴀᴍ ʙᴀᴅ ᴀᴛ ɴᴀᴍɪɴɢ ᴛʜɪɴɢs)
+# OverlayCord
 This project is a simple proof of concept that shows you how to hijack Discord's internal game overlay from an external process without modifying any Discord files, loading any Discord modules, or hooking anything.
 
 ## How does it work?
