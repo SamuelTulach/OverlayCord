@@ -27,7 +27,7 @@ void SendBuffer(IDXGISwapChain* pSwapChain)
     D3D11_MAPPED_SUBRESOURCE mappedResource;
     status = g_pd3dDeviceContext->Map(pBackBufferStaging, 0, D3D11_MAP_READ, 0, &mappedResource);
 
-    unsigned int bufferSize = lastResizeHeight * mappedResource.RowPitch;
+    unsigned int bufferSize = targetViewportHeight * mappedResource.RowPitch;
     memcpy(mainHeader->ActualBuffer, mappedResource.pData, bufferSize);
 
     mainHeader->Framecount++;
